@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title>My_Web</title>
+         <style>
+            body{
+                text-align:center;
+                margin-top: 50px;
+                background-color: rgb(173, 216, 230);
+            }
+            .Table{
+                margin: 0 auto;
+                width:100%;
+                height:auto;
+            }
+            .top_fix_label{
+                position: fixed;
+                display:flex;
+                justify-content: center;
+                background-color: white;
+                width:100%;
+                top: 0;
+                left: 0;
+                gap:80px;
+                padding:10px;
+            }.Link{
+                font-size: 20px;
+                top: 0;
+                color:black;
+                font-family: "Arial", sans-serif;
+                text-decoration: none;
+            }
+
+            .Link:hover {
+                color:orange;
+            }
+            .Name{
+                font-weight:bold; 
+                font-size:60px;
+                padding-top:10px;
+                font-family: "Arial", sans-serif;
+                margin-top:50px;
+            }
+            .content{
+                padding:1px;
+                margin-bottom:0px;
+            }
+
+            .content1{
+                padding:1px;
+                margin-bottom:60px;
+                /* width:100%; */
+                height:30%;
+                border-radius:15px;
+                background-color: white;
+                padding-left:15px;
+            }
+            .content2{
+                padding:1px;
+                margin-bottom:30px;
+                width:100%;
+                height:50%;
+                border-radius:15px;
+                background-color: white;
+                padding-left:15px;
+            }
+            .frame{
+                text-align:left;
+                width:60%;
+                height:80%;
+                margin: 0 auto;
+                margin-top:30px;
+            }
+            .support{
+                width:35%;
+                height:20%;
+                margin-left:auto; margin-right:auto;
+                background-color:white;
+                padding:20px;
+                margin-bottom:100px;
+                font-size:16px
+            }
+            .bottom{
+                border-radius:15px;
+                width:25%;
+                height:15%;
+                margin-left:auto; margin-right:auto;
+                background-color:rgb(13, 53, 184);
+                padding:20px;
+                margin-top:40px;
+                text-align:center;
+            }
+            .about{
+                padding:30px;
+                margin-bottom:30px;
+                height:100%;
+                /* width:100%; */
+                border-radius:15px;
+                background-color: white;
+
+                padding-left:30px;
+            }
+         </style>
+        <div class="top_fix_label" >
+             <a class="Link" href="personal.html">首頁</a>
+             <a class="Link" href="https://github.com/sopp6292">Github</a>
+             <a class="Link" href="about_me.html">關於我</a>
+        </div>
+        <body>
+            <div class="Table">
+                <div class="Name">Hong-Wei-Chen</div>
+                 <div class="content">
+                    <div class="frame">
+                        <div class="hoverBox content1">
+                            <h2>自我介紹</h2>
+                            <h3>大家好!我叫陳泓瑋</h3>
+                        </div>
+                        <div class="hoverBox content1">
+                            <h2>興趣</h2>
+                            <ul style="font-size:22px;">
+                                <li>尋找高cp值的美食</li>
+                                <li>慢跑</li>
+                                <li>打遊戲</li>
+                            </ul>
+                        </div>
+                        <div class="hoverBox content1">
+                            <h2>推薦美食</h2>
+                            <ul>
+                                <a class="Link" href="https://www.facebook.com/bearyueyue/?locale=zh_TW"><li>熊越岳</li></a>
+                                <a class="Link" href="https://www.instagram.com/pangtaco.tw/"><li>胖塔可</li></a>
+                                <a class="Link" href="https://www.facebook.com/p/%E6%B0%91%E4%B8%BB%E7%81%AB%E9%9B%9E%E8%82%89%E9%A3%AF-100065198370959/?locale=zh_TW"><li>民主火雞肉飯</li></a>
+                            </ul>
+                        </div>
+                        <div class="hoverBox content1">
+                            <h2 style="font-size:24px;">My favorite</h2>
+                            <ul style="font-size:22px;">
+                                <li>Demon's Souls</li>
+                                <li>Dark Souls's Series</li>
+                                <li>Bloodborne</li>
+                                <li>Sekiro: Shadows Die Twice</li>
+                                <li>Elden Ring</li>
+                            </ul>
+                           
+                        </div>
+                        <h1 style="text-align:center">Contact</h1>
+                        <h4 style="text-align:center">
+                            <a class="Link" href="mailto:cyy968144@gmail.com">cyy968144@gmail.com</a>
+                            
+                        </h4>
+                        <div class="hoverBox support">
+                            <h2>如果對我有興趣可以幫忙贊助喔!</h2>
+                            <div class="bottom">
+                                <a class="Link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                boxes = document.querySelectorAll(".hoverBox");
+
+                function changeColortTo(event) {
+                    event.currentTarget.style.backgroundColor = "rgb(32, 207, 140)";
+                }
+
+                function changeColorBack(event) {
+                    event.currentTarget.style.backgroundColor = "white";
+                }
+
+                boxes.forEach((box) => {
+                    box.addEventListener("mouseover", changeColortTo);
+                    box.addEventListener("mouseleave", changeColorBack);
+                });
+            </script>
+        </body>
+    </head>
+</html>
